@@ -1,0 +1,179 @@
+	
+/*general*/
+
+
+* :not(.layer):not(.container) {
+	-webkit-transition: all 0.25s ease;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;			
+	/*margin: 0;*/
+	/*padding: 0;*/
+	-webkit-text-size-adjust: none;
+}
+
+.loaderBook{
+		width: 300px;
+			position: fixed; top: 25%; left: 50%; z-index: 55551; margin-left: -140px;
+     }	
+
+     .text{
+     	font-family: 'bebasregular';
+     	text-align: center;
+     	color: #e2e2e2;
+     	letter-spacing: 2.5px;
+     	position: fixed; top: 69%;  left: 50%; margin-left: -220px; z-index: 55549; 
+     }
+
+
+li{
+	transition: none !important;
+}
+
+
+
+
+.closeButton{
+	font-family: "open sans";
+	font-size: 50px;
+	position: absolute;
+	color: white;
+	right: 2px;
+	top: 0px;
+	z-index: 999;
+	cursor: pointer;
+}
+.slideNav{
+	float: left;
+	position: relative;
+	margin: 9% 0 0 6% !important;
+	transition: none !important;
+}
+
+nav>ul>li{
+	margin: 15px 0 0 15px;
+	font-weight: bold;
+	font-size: 44px;
+	letter-spacing: 1px !important;
+	list-style-type: none;
+}
+
+/*nav>ul>li:hover{
+	color: #edb128 ;
+	cursor: pointer;
+}
+*/
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+.activeli
+{
+	font-size: 55px;
+	color: #edb128 ;	
+}
+
+.notepadContainer{
+	position: relative;
+	float: right;
+	margin: 1% 7% 0 0;
+
+}
+
+.notepad{
+	width: 750px;
+	z-index: -1;
+	clear: both;
+}
+
+.notepadContent{
+	position: relative;
+	margin: -70% 0 0 6%;
+	
+	max-width: 630px;
+	height: 450px;
+	line-height: 1.6em;
+	font-family: "open sans";
+	text-align: justify;
+	font-size: 16px;
+	/*overflow: scroll;*/
+
+	
+}
+
+.notepadHeading h2{
+	color: #edb128;
+	font-size: xx-large;
+	margin: 0 0 10px 0;
+	margin-bottom: 20px;
+}
+
+.contentHeading{
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.notepadPara{
+	position:relative;
+	overflow-y:scroll;
+	height:380px;
+	line-height: 1.36em;
+	padding: 10px 20px 10px 0;
+}
+
+
+	.backFont{
+		font-family: 'bebasregular';
+		opacity: 0.08;
+		font-size: 260px;
+		letter-spacing: 6px;
+		position: absolute;
+		bottom: 0px;
+		z-index: -99;
+		margin-left: 20px;
+	}
+
+	.ab{
+		font-size: 530px;
+		letter-spacing: 8px;
+		margin-left: 10px;
+	}
+
+
+
+/*media queries*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+    	.slideNav{
+    		display: none;
+    	}
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    	.slideNav{
+    		display: none;
+    	}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+    	.slideNav{
+    		display: none;
+    	}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
